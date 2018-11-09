@@ -1,0 +1,47 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.results-item {
+  position: relative;
+  max-width: 120px;
+}
+.results-item .results-value {
+  font-size: 36px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  top: 0;
+  height: 68%;
+  font-weight: 200;
+}
+.results-item .results-value2 {
+  font-size: 68px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  top: 0;
+  height: 86%;
+  font-weight: 200;
+}
+.results-item .results-label {
+  font-size: 13px;
+}
+.another-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.app-container .btn-link {
+  text-transform: initial;
+}
+.another-link .btn {
+  color: #96a0ac;
+}
