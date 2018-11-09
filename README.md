@@ -2,14 +2,12 @@
 
 Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site.
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+## Set up
 
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
-```
-
-Or [view the live demo here](https://gatsby-starter-hello-world-demo.netlify.com/).
-
-## Running in development
+`npm install --global gatsby-cli`
 
 `gatsby develop`
+
+## Deployment
+
+Commits to the master branch will auto deploy to https://inspiring-payne-390369.netlify.com/
