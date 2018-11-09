@@ -1,3 +1,7 @@
-import React from "react"
+import React from 'react';
 
-export default () => <div>Hello world!</div>
+import PublicTest from '../components/PublicTest';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../assets/css/style.css';
+
+export default () => <PublicTest />;
