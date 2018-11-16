@@ -12,10 +12,10 @@ class PublicTest extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      pending: false,
+      pending: true,
       http: 'https://',
       url: '',
-      results: '',
+      results: { id: 'here' },
       error: '',
     };
   }

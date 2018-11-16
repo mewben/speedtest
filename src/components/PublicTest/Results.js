@@ -50,6 +50,12 @@ export class Results extends Component {
                   value={get(data, 'audits.speed-index.score', 0) * 100}
                 />
               </div>
+              <div>
+                <form>
+                  <input type="email" placeholder="Email Address" />
+                  <button>Email me the results</button>
+                </form>
+              </div>
             </div>
           </animated.div>
         )}
