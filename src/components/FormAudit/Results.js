@@ -43,6 +43,7 @@ const Results = ({ classes, data, onBack }) => {
                 src={data.screenshot}
                 className="rounded border img-fluid float-left mr-3"
                 width="52"
+                alt={data.url}
               />
             </div>
             <div className="flex-grow-1">

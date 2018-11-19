@@ -43,9 +43,6 @@ const styles = theme => ({
     '& .text-center': {
       textAlign: 'center',
     },
-    '& .text-center': {
-      textAlign: 'center',
-    },
     '& .pass-bg': {
       backgroundColor: green[400],
       color: '#fff',

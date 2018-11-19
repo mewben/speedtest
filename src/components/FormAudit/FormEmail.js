@@ -3,7 +3,6 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import FormHelperText from '@material-ui/core/FormHelperText';
-import { Link } from 'gatsby';
 import { withStyles } from '@material-ui/core/styles';
 import axios from 'axios';
 

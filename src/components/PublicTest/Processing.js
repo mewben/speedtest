@@ -5,10 +5,7 @@ export default ({ url, error, onBack }) => {
   if (error) {
     return (
       <div className="text-center">
-        <h2>
-          <span>❗️</span>
-          Oops! Something went wrong
-        </h2>
+        <h2>Oops! Something went wrong</h2>
         <p className="text-muted">{error}</p>
         <button onClick={onBack} className="btn btn-link">
           &larr; Back to form

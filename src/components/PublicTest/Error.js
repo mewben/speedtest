@@ -10,7 +10,6 @@ const Error = ({ msg }) => {
     >
       {styles => (
         <div style={styles} className="snackbar error">
-          <span>❗️</span>
           {msg}
         </div>
       )}

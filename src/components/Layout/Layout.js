@@ -1,6 +1,6 @@
 import React from 'react';
 
-import withMuiTheme from './withMuiTheme';
+// import withMuiTheme from './withMuiTheme';
 import TopNav from './TopNav';
 
 const Layout = ({ children }) => {

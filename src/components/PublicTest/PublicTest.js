@@ -12,10 +12,10 @@ class PublicTest extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      pending: true,
+      pending: false,
       http: 'https://',
       url: '',
-      results: { id: 'here' },
+      results: null,
       error: '',
     };
   }
@@ -49,7 +49,7 @@ class PublicTest extends Component {
     this.setState({ error: '', url: cleanURL, pending: true });
 
     axios
-      .post('https://test-nyc.websitespeed.co' + '/api/public/quickcheck', {
+      .post('https://test-nyc.websitespeed.co/api/public/quickcheck', {
         url: postURL,
       })
       .then(res => {

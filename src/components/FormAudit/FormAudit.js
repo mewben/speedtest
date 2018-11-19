@@ -27,17 +27,6 @@ class FormAudit extends Component {
       error: '',
       pending: false,
       results: null,
-      results2: {
-        url: 'https://generalstudios.com',
-        screenshot: '',
-        perf: 0.3,
-        pwa: 0.6,
-        acc: 0.3,
-        bp: 0.3,
-        seo: 0.3,
-        totalSize: 113873.29,
-        screenshot: '',
-      },
     };
   }
 
