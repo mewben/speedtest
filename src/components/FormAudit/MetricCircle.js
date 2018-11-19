@@ -25,7 +25,7 @@ const MetricCircle = ({ label, score = 0 }) => {
         />
         <CircularProgress
           variant="static"
-          value={50}
+          value={displayScore - 0}
           size={150}
           thickness={1}
         />

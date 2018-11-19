@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import axios from 'axios';
+import get from 'lodash/get';
 
 import MainForm from './MainForm';
 import Results from './Results';
@@ -54,7 +55,10 @@ class FormAudit extends Component {
       })
       .catch(err => {
         console.log('err', err, err.message);
-        this.setState({ error: err.response.data.message, pending: false });
+        const errMsg =
+          get(err, 'response.data.message') ||
+          'Oops! Error. Please try again later.';
+        this.setState({ error: errMsg, pending: false });
       });
   };
 

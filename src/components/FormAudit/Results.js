@@ -2,11 +2,12 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
-import acc from 'accounting';
 
 import FormEmail from './FormEmail';
 import Metric from './Metric';
 import MetricCircle from './MetricCircle';
+import MetricText from './MetricText';
+import readableBytes from '../../utils/readable-bytes';
 
 const styles = theme => ({
   root: {
@@ -43,17 +44,18 @@ const Results = ({ classes, data, onBack }) => {
                 src={data.screenshot}
                 className="rounded border img-fluid float-left mr-3"
                 width="52"
-                alt={data.url}
+                alt={data.resolvedUrl}
               />
             </div>
             <div className="flex-grow-1">
               <Typography variant="overline">Audit Results</Typography>
-              <Typography variant="h4">{data.url}</Typography>
+              <Typography variant="h4">{data.resolvedUrl}</Typography>
               <Typography variant="subtitle2">
                 Page Size:{' '}
-                <span className="pass">
-                  {acc.formatNumber(data.totalSize.rawValue, 0)} KB
-                </span>
+                <MetricText
+                  score={data.totalSize.score}
+                  text={readableBytes(data.totalSize.rawValue)}
+                />
               </Typography>
               <hr />
               <div>
