@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import green from '@material-ui/core/colors/green';
 import { withStyles } from '@material-ui/core/styles';
 import Fade from '@material-ui/core/Fade';
-//import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Layout from '../components/Layout';
 import FormAudit from '../components/FormAudit';
