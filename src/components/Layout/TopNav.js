@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
@@ -20,9 +20,9 @@ const TopNav = ({ classes }) => {
       className={classes.root}
     >
       <Toolbar>
-        <Typography variant="h6">
-          <Link to="/">WebsiteSpeed</Link>
-        </Typography>
+        <Button component={Link} to="/">
+          WebsiteSpeed
+        </Button>
       </Toolbar>
     </AppBar>
   );
