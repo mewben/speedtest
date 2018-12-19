@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { navigate } from 'gatsby';
 import { withStyles } from '@material-ui/core/styles';
 import axios from 'axios';
-import get from 'lodash/get';
 
 import MainForm from './MainForm';
 import Results from './Results';
@@ -30,7 +29,6 @@ class FormAudit extends Component {
       url: '',
       error: '',
       pending: false,
-      // results: null,
     };
   }
 
@@ -93,36 +91,6 @@ class FormAudit extends Component {
     this.setState({ pending: false });
     navigate('/measure/?id=' + data._id, { state: { result: data } });
   };
-
-  /*
-  _onSubmit2 = e => {
-    e.preventDefault();
-    const { url } = this.state;
-    let resolvedUrl = url;
-    if (url.lastIndexOf('http://') !== 0 && url.lastIndexOf('https://') !== 0) {
-      resolvedUrl = 'https://' + url;
-    }
-    this.setState({ url: resolvedUrl, pending: true, error: false });
-    console.log('url', resolvedUrl);
-    const apiURL =
-      process.env.NODE_ENV === 'production'
-        ? 'https://staging.websitespeed.co/e1/public/quickcheck'
-        : 'http://localhost:4040/e1/public/quickcheck';
-    axios
-      .post(apiURL, { url: resolvedUrl, location: 'nyc' })
-      .then(res => {
-        console.log('res', res);
-        this.setState({ results: res.data, pending: false });
-      })
-      .catch(err => {
-        console.log('err', err, err.message);
-        const errMsg =
-          get(err, 'response.data.message') ||
-          'Oops! Error. Please try again later.';
-        this.setState({ error: errMsg, pending: false });
-      });
-  };
-  */
 
   _initialize = () => {
     this.setState({
