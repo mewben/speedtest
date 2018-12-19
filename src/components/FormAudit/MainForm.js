@@ -39,6 +39,7 @@ const MainForm = ({ onSubmit, url, onChange, pending, error, classes }) => {
             variant="outlined"
             className={clTextField}
             fullWidth
+            autoFocus
             onChange={onChange}
             InputProps={{
               endAdornment: (
