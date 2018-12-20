@@ -1,0 +1,7 @@
+[context.deploy-preview.environment]
+  GATSBY_PUSHER_KEY = "07e23283266f36d8bdd9"
+  GATSBY_API_HOST = "http://staging.websitespeed.co"
+
+[context.production.environment]
+  GATSBY_PUSHER_KEY = "07e23283266f36d8bdd9"
+  GATSBY_API_HOST = "http://staging.websitespeed.co"
