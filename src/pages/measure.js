@@ -66,11 +66,9 @@ class Measure extends Component {
       error: false,
       result: {},
     };
-    // withPusher();
   }
 
   componentDidMount() {
-    // initialize pusher
     console.log('didmount', this.props);
     // get search params
     const q = this._getQueryParams();
@@ -78,7 +76,6 @@ class Measure extends Component {
       // check if result is in the state
       const nextResult = get(this.props, 'location.state.result') || {};
       if (nextResult._id) {
-        console.log('didmountnextresult', nextResult);
         this.setState({ result: nextResult, loading: false });
       } else {
         // get result for id
